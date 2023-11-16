@@ -1,0 +1,18 @@
+
+body{
+    /* text-align: center; */
+}
+
+
+.btn{
+    border : none;
+    background-color: rgb(102, 102, 207);
+    color:#fff;
+    padding:15px 40px;
+    border-radius:5px;
+    text-transform: uppercase;
+    display:block;
+    margin: 400px auto;
+   
+}
+

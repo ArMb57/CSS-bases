@@ -1,0 +1,21 @@
+h1{
+
+    /* named colors */
+    color:darkmagenta;
+    background-color: aqua;
+
+
+    /* RGB Red Green Bleu 0-255  */
+    background-color: rgb(194, 40, 40);
+
+    /* RBGA a = opacity 0-1 */
+    background-color: rgba(194, 40, 40, 0.1);
+
+    /* HEXADECIMAL */
+    /* base 16 = [0-9][a-f] */
+    /* fa = rouge 80 = bleu 72 = vert */
+    background-color: #aa2d2d;
+    background-color: #000;
+
+
+}

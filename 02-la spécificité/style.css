@@ -1,0 +1,33 @@
+
+
+
+/* 5. !important  */
+/* A utiliser avec parcimonie */
+h1{
+    color:midnightblue!important;
+}
+
+
+/* 4. Combiner les sélecteurs */
+
+body .title#title-1{
+    color:yellow;
+}
+
+/* 3. Sélecteur de force 3 */
+#title-1{
+    color:blue;
+}
+
+/* 2. Sélecteur de force 2 */
+.title{
+    color:green;
+
+}
+
+/* 1. Sélecteur de force 1 */
+h1{
+  color:red;
+  font-size: 45px;
+  text-align: center;
+}

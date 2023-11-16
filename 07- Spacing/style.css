@@ -1,0 +1,47 @@
+.box{
+    width:300px;
+    height:300px;
+    background-color: #000;
+
+    /* Margin = les marges externes d'un element  */
+    /*  sur les 4 cotés */
+    margin:250px;
+
+    /* haut&bas droit&gauche */
+    margin:150px 250px;
+
+    /* haut droite bas gauche */
+    margin: 100px 125px 150px 175px;
+
+
+    /* padding = les marges interne d'un element */
+    padding: 150px;
+
+    /* border  */
+    border-width:10px;
+    border-style:dotted;
+    border-color: red;
+    border: 10px dotted #5f0bcc;
+
+
+    /* border-radius */
+    /*  si la valeur du radius est sup à la moitier de la hauteur de l'element alors on va retrouver un effet pils  */
+    border-radius:9999px;
+    border-radius: 10px 60px 20px 30px;
+
+    /* box-sizing garder la tailler de l'element de base */
+
+    box-sizing:border-box;
+
+    /* centrer un element sur X avec les element block*/
+    margin:0 auto;
+
+
+}
+
+/*  on l'aime tellement qu'on l'ajout au reset  */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}

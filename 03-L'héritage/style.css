@@ -1,0 +1,34 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+
+    color:red;
+
+    font-size:40px;
+}
+
+/* enlever la propriété de base d'un élement  */
+
+button{
+ font-family: 'Courier New', Courier, monospace;
+ font-size:40px;
+}
+
+a{
+    color:red;
+}
+
+/* Il hérite du parent le plus proche au sens de la proximité */
+
+.card{
+    color:blue;
+    /* padding ne s'hérite pas */
+    padding:40px;
+}
+
+.card p {
+    /*  faire hériter un élement qui ne s'hérite pas de base */
+    padding:inherit;
+
+    /*  supprimer l'héritage  */
+    color:initial;
+}

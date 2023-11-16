@@ -1,0 +1,50 @@
+h1{
+    /* alignement */
+    text-align:center;
+
+    font-size:45px;
+
+    letter-spacing: 5px;
+
+    font-family: 'sans-serif';
+
+   
+
+}
+
+a{
+    color:red;
+
+    /* text-decoration:none; */
+
+    text-underline-offset: 10px;
+
+    text-decoration-color: blue;
+
+}
+div{
+    width:300px;
+}
+
+p{  
+    font-weight: 900;
+    text-transform: uppercase;
+
+    text-align: justify;
+
+    font-style: italic;
+    line-height: 1.8;
+
+
+
+}
+
+ul{
+    list-style-type:none;
+    list-style-image: url();
+
+}
+
+ol{
+    list-style-type: upper-roman;
+}

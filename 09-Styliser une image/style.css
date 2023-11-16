@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+img{
+
+    /* width:700px; */
+    width:100%;
+
+ 
+    /*  garder les proportions de l'img meme si elle est deformé */
+       /* width: 700px;
+    height: 300px; */
+    object-fit: cover; 
+    object-fit: contain;
+
+
+    /* positionner l'image sur une certaine partie de celle-ci  */
+    object-position: 40% 60%;
+
+}
+
+p{
+    height: 100vh;
+    background-image: url('./img/nature.jpg');
+    background-color: blue;
+    background-position: center;
+
+    background-size:contain;
+
+
+    /*  pas repéter l'image  */
+    background-repeat:no-repeat;
+
+    
+    
+    
+}

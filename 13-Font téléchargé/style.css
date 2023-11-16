@@ -1,0 +1,22 @@
+/*  Les extenssion pour les fonts --> woff, otf, ttf  */
+/* Font dl --> dafont, pixelify */
+
+/*  faire charger une police téléchargé  */
+@font-face {
+    font-family: 'SF Fedora';
+    src: url('./fonts/SF\ Fedora.ttf')
+}
+
+@font-face {
+    font-family: 'Stay Classy';
+    src: url('./fonts/Stay\ Classy\ SLDT.ttf'),
+    url('./fonts/Stay\ Classy\ SLDT.otf')
+}
+
+h1{
+font-family: "SF fedora";
+text-align: center;
+font-size: 50px;
+margin:50px 0;
+}
+

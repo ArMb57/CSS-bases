@@ -1,0 +1,36 @@
+
+/*  block: Prend toute la largeur de l'écran et pousse les autres elements à la ligne 
+Si pas de hauteur prend la hauteur de ses enfants */
+
+/* inline: Prend la taille de son contenu & ne pousse pas les autres elements à la ligne
+width et height ne fonctionne pas 
+margin-top et bottom ne fonctionne pas */
+
+/* inline-block: Prend la taille de son contenu & ne pousse pas les autres elements à la ligne
+accepte width et height*/
+
+/* none: Ne prend pas de place sur la page */
+.box{
+    width:300px;
+    height:300px;
+    background-color: crimson;
+    display:none;
+}
+
+.box2{
+    width:300px;
+    height:300px;
+    background-color: rgb(40, 20, 220);
+    display:inline-block;
+
+}
+
+span{
+    background-color: cornflowerblue;
+    display:block;
+    width:100px;
+    height:100px;
+    margin:25px
+   
+  
+}

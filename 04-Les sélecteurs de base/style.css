@@ -1,0 +1,33 @@
+/* Différents sélecteurs  */
+
+/* class */
+.title{
+background-color: mediumorchid;
+}
+
+/* id */
+#title-1{
+background-color: gold;
+}
+
+/*  tous les elements qui ont la class .title et .first-title */
+.title.first-title{
+    padding:50px;
+}
+
+/* Tous les p enfant de .container */
+.container p {
+    color:blue;
+}
+
+/* Selecteur universel utilisé sutout pour le reset */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* utiliser * sur un element */
+.container *{
+    color:red;
+}
