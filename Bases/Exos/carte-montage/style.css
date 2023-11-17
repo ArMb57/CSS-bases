@@ -1,0 +1,36 @@
+.carte-img{
+    width:600px;
+    height:600px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+
+}
+
+.blog-img{
+
+width:100%;
+/* overflow: hidden; */
+
+}
+
+.blog-img img{
+    width:100%;
+    height:auto
+}
+
+.carte-img h1{
+    padding:10px;
+
+}
+
+.carte-img p{
+    padding:10px;
+}
+
+.carte-img a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: green;
+}

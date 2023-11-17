@@ -1,0 +1,102 @@
+/* reset et selecteur universel */
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* par type, elements  */
+h1{
+    color:crimson;
+}
+
+/*  par classe et id  */
+
+.title{
+    color: green;
+}
+
+#title{
+    color: blue;
+}
+
+/* combinaison */
+/* évite de dépasser plus de 3 selecteurs  */
+.title#title{
+    color: yellow;
+}
+
+/* espace signifie select les enfants d'un element ici tout les h1 enafnts de div  */
+div h1{
+    background-color: red;
+}
+
+
+/* selecteurs avancés  */
+/* , permet de selectionner plusieurs elements  */
+h1,ul{
+    /* background-color: blue; */
+}
+
+/* Selectionne tous les enfants direct de l'element selectionné   */
+ul > li {
+    /* background-color: royalblue; */
+}
+
+/* + selectionne le premier element de meme nvx  */
+h1 + ul{
+/* background-color: blueviolet; */
+}
+
+/*  ~ selectionne tous les elements de meme nvx qui suivent l'element selectionné  */
+h1 ~ ul{
+    background-color: brown;
+}
+
+div ~ p {
+    background-color: red;
+} 
+
+
+/*  selectionner par les attributs HTML  */
+input[type="text"]{
+    background-color: blue;
+}
+
+/*  selectionner un attribut qui termine par .fr avec le symbole $ */
+a[href$=".fr"]{
+    background-color: blueviolet;
+}
+
+/*  Les pseudo class de position  */
+/* :nth-child() */
+/* odd: impaire // even: pair */
+li:nth-child(even){
+    background-color: red;
+}
+
+/*  selectionner le premier de la liste */
+li:first-of-type{
+    /* background-color: blue; */
+}
+/*  selectionner le dernier de la liste */
+li:last-of-type{
+    /* background-color: green; */
+}
+
+
+
+/* :not ignorer de la sélection  */
+li:not(:nth-child(3)){
+    /* background-color: red; */
+}
+
+li:not(.not){
+    background-color: red;
+}
+
+
+
+

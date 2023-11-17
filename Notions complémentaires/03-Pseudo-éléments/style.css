@@ -1,0 +1,32 @@
+
+/*  ::before et ::after tjrs ajouter la propriété content même si elle est vide  */
+/* De base se sont des elements inline  */
+
+h1::before{
+content:"";
+background-color: red;
+display:block;
+height:50px;
+}
+
+h1::after{
+    content:"";
+    background-color: red;
+    display:block;
+    height:50px;
+    }
+
+
+
+
+/*  selectionner une partie d'un element  */
+
+p::first-letter{
+    font-size: 2em;
+    color: red;
+}
+
+p::first-line{
+    font-size: 2em;
+    color: red;
+}

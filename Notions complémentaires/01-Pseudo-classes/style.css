@@ -1,0 +1,43 @@
+.box{
+    width:300px;
+    height:300px;
+    background-color: coral;
+}
+
+/*  au survol  */
+.box:hover{
+    background-color: blue;
+    width: 200px;
+    border-radius: 10px;
+}
+
+/*  au clic  */
+.box:active{
+    background-color: green;
+}
+
+input{
+    width:50px;
+    height:50px;
+}
+
+/* changer les props d'une check box  */
+input:checked{
+   accent-color: red;
+   content: blue;
+}
+
+/* Les elements interactifs comme les btn, les liens, et les input peuvent recevoir un focus  */
+/*  focus element d'accessibilité , appuyer sur tab , pour les mal voyants  */
+
+button:focus{
+    background-color: yellow;
+}
+
+/*  changer la couleur d'un lien qd il à été cliqué  */
+a:visited{
+    color: green;
+    text-decoration-color:pink;
+}
+
+

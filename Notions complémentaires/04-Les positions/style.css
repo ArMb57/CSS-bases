@@ -1,0 +1,66 @@
+.box{
+    width:300px;
+    height:300px;
+}
+
+/*  de base les elements sont en position:static --> on dit que les element ne sont pas positionnés  */
+
+
+.b1{
+    background-color: red;
+    /*  position:relative à sa position initiale */
+    position: relative;
+    /* se decale de 250px par rapport à sa position initiale  */
+    left:250px;
+    /* Les elements positionnés vont passer au dessus des elements non postionné --> contexte d'empilement  */
+    top:80px;
+
+}
+.b2{
+    background-color: green;
+    /*  position:absolute, il sort du flux tradionel, relatif mais à son parent  */
+    /* Tant que son parent n'est pas positionné, il sera relatif au viewport  */
+    /* Il se postionne à 50 px par rapport au viewport */
+    position: absolute;
+    top:50px;
+}
+.b3{
+    background-color: blue;
+    /* position:fixed, il va sortir du flux mais il va rester relatif au viewport   */
+    /* suit le scroll */
+    position:fixed;
+    top: 0;
+    width:100%;
+    height:70px;
+
+}
+.b4{
+    /*  sticky : Il passe au dessus, il va rester relatif au viewport   */
+    background-color: yellow;
+    position:sticky;
+    /* distance à laquelle l'element va être sticky pa rapport au top  */
+    top:0px;
+}
+.b5{
+    position: relative;
+    background-color: pink;
+}
+
+
+.parent{
+    background-color: aqua;
+    position:relative;
+
+
+}
+
+.child{
+    background-color: crimson;
+    width:50px;
+    height:50px;
+    /* centrer un element sur x et y avec position absulte */
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,61 @@
+.box{
+    width:300px;
+    height:300px;
+    position:absolute;
+}
+
+
+
+.b1{
+    background-color: red;
+    top:50px;
+    left:50px;
+/*  changer le contexte d'empilement avec z-index */
+    z-index: 1;
+
+}
+.b2{
+    background-color: green;
+    top:60px;
+    left:60px;
+    z-index: 2;
+
+}
+.b3{
+    background-color: blue;
+    top:70px;
+    left:70px;
+
+
+}
+.b4{
+
+    background-color: yellow;
+    top:80px;
+    left:80px;
+
+}
+.b5{
+
+    background-color: pink;
+    top:90px;
+    left:90px;
+}
+.parent{
+    background-color: royalblue;
+/* Si le parent à un context d'empilement, le z-index negatif ne fonctionne pas  */
+    /* z-index:1 */
+
+    /*  d'autres propriété changent le context d'empilement */
+    /* transform:translate(100px,100px); */
+    /* transform: rotate(45deg); */
+    /* opacity:0.99; */
+
+}
+
+.child{
+    background-color: crimson;
+    /*  en negatif il passe en dessous de tous les autres elements  */
+    z-index:-1;
+    
+}
