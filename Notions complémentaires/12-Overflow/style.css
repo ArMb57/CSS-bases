@@ -1,0 +1,20 @@
+.card{
+    background-color: red;
+    width: 400px;
+    height:400px;
+
+    /* overflow est utiliser pour gérer les elements qui depassent d'un bloc */
+
+    /* valeur de base  */
+    overflow: visible;
+
+    /* cacher le contenu qui dépasse */
+    overflow: hidden;
+
+    /* Faire apparaitre un scroll  */
+    overflow:scroll;
+
+    /* scroll si nécéssaire  */
+    overflow:auto
+
+}

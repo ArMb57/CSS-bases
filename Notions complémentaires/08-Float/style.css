@@ -1,0 +1,29 @@
+.container{
+    width:auto;
+    margin:0 auto;
+    background-color: blueviolet;
+}
+
+.box{
+    height:200px;
+    width:200px;
+ 
+
+}
+
+.b-1{
+    background-color: red;
+    float:left;
+}
+
+.b-2{
+    background-color: green;
+    float:right;
+}
+
+.container::after{
+    content:"";
+    display:block;
+    /* Il va lui dire de prendre en compte les elements flottants de chaque cotés  */
+    clear:both;
+}

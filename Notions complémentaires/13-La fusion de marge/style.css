@@ -1,0 +1,28 @@
+/* Dans un flow normal (bloc et inline pas flex pas grid) , un element enfant va fusionner ses marges avec l'element parent  */
+
+
+/*  Solution: Mettre du contenu dans le parent: */
+/* mettre du padding dans le parent */
+/* utiliser un pseudo element  */
+
+
+.parent{
+    width:400px;
+    height:300px;
+    background-color: chocolate;
+    margin: 0 auto;
+    /* padding-top:1px */
+    
+}
+.parent::before{
+    content:"";
+    display:block;
+    height:1px;
+}
+
+.child{
+    height:100px;
+    background-color: lightgreen;
+    margin-top:90px
+
+}

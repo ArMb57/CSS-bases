@@ -1,0 +1,54 @@
+:root{
+    /* convertion du pixel au rem  */
+    /* 12*100/16 */
+    --fs-12: 0.75rem;
+    --fs-14:0.875rem;
+}
+
+
+
+.box{
+    height:150px;
+    background-color: crimson;
+    margin-bottom:40px;
+    color:#f1f1f1;
+
+}
+
+/* unité de mesure absolue */
+.pixel{
+    width: 200px;
+
+}
+/* unité de mesure relative à son parent  */
+.pourcentage{
+width:90%;
+}
+
+/* viewPort width --> relative à la largeur du navigateur */
+.vw{
+    width:50vw;
+}
+/* viewPort height --> relative à la hauteur du navigateur */
+.vh{
+    width:50vh;
+}
+
+/* Unité relative à la font size de son parent  */
+
+.parent{
+    font-size: 20px;
+}
+
+/* unité de mesure pour les fonts */
+/* ref à la font size du parent 2*20 */
+.em{
+    font-size: 2em;
+}
+
+
+/* Unité relative à la font size de la racine --> root */
+/* font-size du navigateur de base = 16px */
+.rem{
+font-size: var(--fs-12);
+}

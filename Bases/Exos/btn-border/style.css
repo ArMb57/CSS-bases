@@ -1,0 +1,30 @@
+body{
+    background-color: #17181f;
+}
+
+h1{
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.btn{
+    display:block;
+    margin:100px auto;
+    font-size:18px;
+    padding:25px 80px;
+    background-color: #ffd176;
+    border: none;
+    outline:none;
+    /* box-shadow: 0 8px #855b07; */
+    border-bottom:8px solid #855b07;
+    position: relative;
+    top:2px;
+
+
+}
+
+.btn:active{
+    /* box-shadow: 0 0 #855b07; */
+    border-bottom:0px solid #855b07;
+    top:6px;
+}

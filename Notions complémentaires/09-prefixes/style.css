@@ -1,0 +1,21 @@
+/* Les préfixes vendors, permettent d'utiliser des propriétés qui ne sont pas encore totalement intégrées par les nav  */
+
+/* 
+-webkit- : (chrome, safari, opera,  casi tous le nav IOS )
+-moz- : (firefox)
+-o-: (opera acienne versions)
+-ms-: internet explorer, edge (chromium)
+
+*/
+
+
+h1{
+
+text-align:center;
+font-size: 100px;
+text-transform: uppercase;
+background: linear-gradient(to bottom right, blue, red);
+-webkit-background-clip: text;
+color:transparent;
+
+}
