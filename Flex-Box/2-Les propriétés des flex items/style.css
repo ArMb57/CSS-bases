@@ -1,0 +1,71 @@
+body{
+    background-color: #222;
+
+}
+
+.container{
+    max-width:600px;
+    height:600px;
+    background-color: #fff;
+    margin: 0 auto;
+    display:flex;
+    /* flex-direction:row-reverse; */
+}
+
+
+.flex{
+    /* width:100px;
+    height:100px; */
+    background-color: crimson;
+    border-radius: 10px;
+    padding:10px;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size:35px;
+    
+
+    /* un element flexible prend toute la hauteur et prend la largeur de son contenu */
+
+    /* align-self -> permet de disposer les élements flexibles sur la hauteur  */
+    /* center, flex-start, flex-end */
+    /* De base : stretch */
+    align-self:center;
+
+
+    /* flex-grow -> distribuer l'espace restant */
+    /* de base flex-grow:0; */
+
+
+    /* flex-shrink -> Gèrer de le rétrécissement */
+    /* De base flex-shrink:1 */
+
+    /* flex-basis -> gère la taille sur le main axis en fonction de la valeur de flex-direction (row, column) */
+    /*  de base flex-basis: auto  */
+
+    /* propriété raccourcie  */
+    /* grow shrink basis */
+    flex: 1 0 auto;
+
+
+
+    
+}
+
+.item-1{
+ /* order -> changer l'ordre des élements */
+ /*  A appliquer sur une classe spécifique d'un élement  */
+    order:2;
+
+
+
+}
+
+.item-2{
+    order:3;
+  
+}
+
+.item-3{
+    order:1;
+  
+}

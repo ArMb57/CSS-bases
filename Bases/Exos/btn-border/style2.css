@@ -1,0 +1,45 @@
+/* en utilisant le pseudo element ::after */
+
+body {
+    background-color: #17181f;
+}
+
+h1 {
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.btn {
+    display: block;
+    margin: 100px auto;
+    font-size: 18px;
+    padding: 25px 80px;
+    background-color: #ffd176;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: "";
+    background-color: #855b07;
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+
+
+.btn:active::after {
+    width: 100%;
+    height:0px;
+  
+}
+
+.btn:active{
+    top:6px;
+}

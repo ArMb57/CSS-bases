@@ -1,0 +1,76 @@
+body{
+    background-color: #222;
+
+}
+
+.container{
+    max-width:600px;
+    height:600px;
+    background-color: #fff;
+    margin: 0 auto;
+
+    /* AVant de déclarer display:fle on est dans un normal flow -> normal layout  */
+
+    /* Pour utiliser les flexBox il fait le déclarer dans un container  */
+
+    /*  mes elements ne sont plus block ou inline se sont des elements flexibles ou flex items  */
+    display: flex;
+
+
+
+    /*Gérer l'espacement entre mes items   */
+    /* gap:20px; */
+
+
+
+    /* justify-content -> gérer l'alignement sur le main axis (X)  */
+    /* flex-start, flex-end, space-between, space-evenly, space-around, center */
+    /* de base : flex-start */
+    /* justify-content: space-evenly; */
+
+
+
+    /* align-items-> gérer l'alignement sur le cross-axis (Y): center, flex-start, flex-end */
+    /* de base : flex-start  */
+    /* align-items: center; */
+
+
+    /* flex-direction -> changer l'orientation ( row ,column, row-reverse, column-reverse)  */
+    /* de base : flex-direction:row  */
+    flex-direction:row;
+
+    /* flex-wrap -> permey de passer à la ligne ou non  */
+    /* de base : flex-wrap:nowrap */
+    flex-wrap:wrap;
+
+    /* align-content -> gérer l'écart entre les rangées qui passent à la ligne  */
+    /* center,flex-start,flex-end, space-between, space-evenly, space-around  */
+   
+    align-content: center;
+
+/*Gérer l'espacement entre les lignes   */
+    row-gap: 20px;
+
+
+    /* prop raccourcie de flex-direction et flex-wrap */
+    /* flex-flow: column wrap; */
+
+
+
+
+
+
+}
+
+.flex{
+    width:100px;
+    height:100px;
+    background-color: crimson;
+    border-radius: 10px;
+    padding:10px;
+    color: #f1f1f1;
+    font-weight: bold;
+    font-size:35px;
+    
+    
+}

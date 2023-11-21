@@ -1,0 +1,29 @@
+body{
+    background-color: #ffffdd;
+    text-align:center;
+}
+
+.shape{
+    display:inline-block;
+    margin-right:-40px;
+    width:180px;
+    height:180px;
+    padding:90px;
+    color:white;
+    
+/* Contrôle la façon dont les couleurs d'un élement se mélangent avec les couleurs d'un autre élement  */
+    mix-blend-mode:multiply;
+}
+
+.s1{
+    background-color: #ffc30d;
+    border-radius:32% 68% 74% 26% / 20% 23% 77% 80% 
+}
+.s2{
+    background-color: #ff572c;
+    border-radius:20% 80% 63% 37% / 17% 67% 33% 83% ;
+}
+.s3{
+    background-color: #8d374c;
+    border-radius:14% 86% 89% 11% / 64% 15% 85% 36% 
+}
