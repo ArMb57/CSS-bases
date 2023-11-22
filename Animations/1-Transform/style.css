@@ -1,0 +1,54 @@
+body{
+    background-color: #333;
+}
+
+
+/* Transform -> changer les propriété d'un elements  */
+/* translate, scale, rotate, skew  */
+.box{
+    width:300px;
+    height:300px;
+    background-color: crimson;
+    margin: 300px auto;
+    
+
+/* Décaler un element -> translate */
+/* x, y  */
+/*  valeur absolue décale en px  */
+/* valeur relative décale par rapport à la hauteur ou la largeur de l'élement  */
+    /* transform: translate(50%, 50%); */
+
+/* modifier la taille d'un élément  -> scale     */
+/* x,y */
+/*  de base scale(1,1) -> 100% de sa hauteur et largeur */
+/* transform:scale(2,2); */
+
+
+/* rotation d'un élement  -> rotate */
+/* transform:rotate(45deg); */
+
+
+/* distortion -> skew */
+/* x,y */
+/* transform: skew(15deg, 15deg); */
+
+/* Appliquer les transform à la chaine  */
+/* transform: 
+translate(100px, 100px)
+rotate(45deg)
+skew(15deg); */
+
+
+/* Transform origin */
+/* modifier le point d'origne de la transformation (pivot) */
+/* de base : transform-origin: 50% 50% */
+
+transform-origin: 100% 0%;
+transform: rotate(45deg);
+
+
+
+
+}
+
+

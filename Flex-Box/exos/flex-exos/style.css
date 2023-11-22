@@ -1,0 +1,124 @@
+body{
+    background-color: #222;
+}
+
+.container{
+    background-color: bisque;
+    max-width:600px;
+    height:400px;
+    margin: 100px auto;
+    border-radius:10px;
+    padding:10px;
+
+    display:flex;
+
+}
+
+.flex-items{
+    width:100px;
+    height:100Px;
+    background-color: crimson;
+    border-radius:5px;
+    color:white;
+    font-weight: bold;
+    padding:10px;
+    font-size:35px;
+   
+}
+
+
+/* Exercice 1 */
+.flex-1{
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Exercice 2 */
+
+/* Solution 1  */
+/* .flex-2{
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.flex-2 .item-2{
+    align-self:center;
+}
+
+.flex-2 .item-3{
+    align-self:flex-end;
+} */
+
+
+/* Solution 2  */
+.flex-2 .item-2{
+  margin:auto;
+}
+
+.flex-2 .item-3{
+    /* align-self:flex-end; */
+    margin-top:auto;
+} 
+
+/* Exercice 3   */
+
+.container.flex-3{
+    align-items: flex-end;
+    gap:10px;   
+}
+.flex-3 .item-1{
+    height:80px;
+}
+.flex-3 .item-2{
+    height:130px;
+}
+.flex-3 .item-3{
+    height:250px;
+}
+.flex-3 .item-4{
+    height:150px;
+}
+.flex-3 .item-5{
+    height:200px;
+}
+
+/* exercice 4 */
+.flex-4{
+    gap:5px;
+}
+
+.flex-4 .item-2{
+   flex-grow: 1;
+}
+
+/* exercice 5 */
+.flex-5{
+    flex-direction:column;
+    gap:10px;
+}
+
+.flex-5 .flex-items {
+    /* width:unset; */
+    width:auto;
+}
+.flex-5 .item-2 {
+    flex-grow: 1;
+}
+
+/* Exercice 6 */
+
+.flex-6{
+    flex-direction: row-reverse;
+    gap:10px;
+
+    align-items:flex-end;
+}
+/* ou */
+.flex-items{
+    /* align-self: flex-end; */
+    width:90px;
+}
+
+
+

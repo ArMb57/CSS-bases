@@ -1,0 +1,32 @@
+body{
+    background-color: #333;
+}
+
+.box{
+    width:300px;
+    height:300px;
+    margin: 200px auto;
+    background-color: crimson;
+    /*  appliquer une transition au changement d'état induit par le hover  */
+
+    /*  choisir la prop à trasitionner */
+    /* transition-property: transform ; */
+
+    /*  durée total de la transition */
+    /* transition-duration: 1s ; */
+
+    /*  le type de delais de transition */
+    /* transition-timing-function:ease-in-out; */
+
+    /* delais avant que la transition se lance  */
+    /* transition-delay: 2s; */
+
+    /* prop raccourcie */
+    transition: all 0.4s ease-in-out 0s;
+
+}
+
+.box:hover{
+    transform: rotate(45deg);
+    background-color: blue;
+}
