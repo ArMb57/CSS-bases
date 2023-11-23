@@ -1,0 +1,45 @@
+body{
+    background-color: #222;
+}
+
+.container{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot{
+    background-color: aliceblue;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    margin: 0 10px;
+
+}
+.d1{
+    animation: loader infinite 0.4s alternate;
+}
+.d2{
+    animation: loader infinite 0.4s 0.05s alternate;
+}
+.d3{
+    
+    animation: loader infinite 0.4s 0.1s alternate;
+}
+
+@keyframes loader{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+}
+
+/* ou */
+@keyframes loader{
+    100%{
+        transform: translateY(-20px);
+    }
+}

@@ -1,0 +1,66 @@
+body{
+    background-color: #333;
+}
+/* Exemple de base  */
+/* .toggler{
+    background-color: orangered;
+    width:500px;
+    height:500px;
+    display:block;
+}
+
+
+
+input[type="checkbox"]:checked + .toggler{
+    background-color: blue;
+} */
+
+.container{
+    margin: 150px auto;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+.toggler{
+    background-color: orangered;
+    width:40px;
+    height:4px;
+    display:block;
+    /* margin : 100px auto; */
+    position:relative;
+
+}
+.toggler::before, 
+.toggler::after{
+    content:"";
+    width:40px;
+    height:4px;
+    background-color: orangered;
+    position:absolute;
+    transition: 
+    transform 0.2s,
+    background-color 0.2s 0.2s;
+}
+
+.toggler::before{
+top: -10px;
+}
+
+
+.toggler::after{
+    top: 10px;
+}
+
+input[type="checkbox"]:checked + .toggler {
+    background-color: transparent;
+}
+
+input[type="checkbox"]:checked + .toggler::before {
+    top:0;
+    transform: rotate(45deg);
+}
+input[type="checkbox"]:checked + .toggler::after {
+    top:0;
+    transform: rotate(-45deg);
+}

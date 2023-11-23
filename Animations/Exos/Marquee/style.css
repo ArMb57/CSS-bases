@@ -1,0 +1,69 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+background-color: #333;
+}
+/* 242a4d */
+
+.container{
+    background-color: #c8c9cf;
+    margin:5px 0;
+    display: flex;
+}
+
+.marquee{
+    font-size:120px;
+    font-family: sans-serif;
+    white-space: nowrap;
+    animation : marquee 20s infinite linear;
+}
+
+.marquee::after{
+    content:"LONDON - PARIS - SYDNEY - TOKYO - NEW YORK - BERLIN - ROME -";
+    background-color: red;
+}
+
+@keyframes marquee{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(-100%)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Exemple animation responsive avec calc() -> calculer une unité de mesure  */
+/* .box{
+    width:200px;
+    height:200px;
+    background-color: royalblue;
+    margin: 200px 0;
+    animation: slide 2s infinite alternate;
+
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(100vw - 200px));
+
+    }
+} */

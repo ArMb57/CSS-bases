@@ -1,0 +1,36 @@
+body{
+    background-color: #222;
+}
+
+.box{
+    width:300px;
+    height:300px;
+    margin:100px auto;
+    border: 2px dashed red;
+    position:relative;
+    /*  de base notre env est en 2D avec 2 axes X et Y  */
+    /* mettre les elements dans le même env 3D */
+    transform-style: preserve-3d;
+    /* On à pas encore de profondeur  */
+    /* définir une profondeur  */
+    perspective: 1000px;
+
+
+}
+
+.plane{
+    position: absolute;
+    border: 1px solid white ;
+    width:100%;
+    height:100%;
+}
+.p1{
+    background-color: blue;
+    /* transform: rotateY(45deg); */
+}
+.p2{
+    background-color: green;
+    /* transform: rotateX(45deg); */
+    transform: translateZ(40px);
+}
+
