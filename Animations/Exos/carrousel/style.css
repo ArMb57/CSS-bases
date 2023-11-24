@@ -1,0 +1,47 @@
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    width:500px;
+    height:200px;
+    border-radius:5px;
+    background-color: #222;
+    margin: 0 auto;
+    color:white;
+    overflow:hidden;
+}
+
+.items{
+    text-align: center;
+    line-height:200px;
+    font-size: 50px;
+}
+
+/* Pour stopper une animation , la prop stop doit être sur le même element que la déclaration de l'animation  */
+.carrousel{
+    animation: carrousel 10s infinite;
+}
+.carrousel:hover{
+    animation-play-state: paused;
+ 
+}
+
+@keyframes carrousel {
+    0%, 20%{
+        transform: translateY(0px)
+    }
+    25%, 45%{
+        transform: translateY(-200px)
+    }
+    50%, 70%{
+        transform: translateY(-400px)
+    }
+    75%, 95%{
+        transform: translateY(-600px)
+    }
+    100%{
+        transform: translateY(-800px)
+
+    }
+}

@@ -1,0 +1,265 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+}
+button , a {
+    margin: 40px 0;
+}
+
+/* Anime 1  */
+/* methode transform */
+.slide-up{
+    padding:30px 50px;
+    font-size:50px;
+    border-radius:5px;
+    color: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.5s ease;
+
+}
+
+.slide-up::before{
+    content:'';
+    background-color: #000;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide-up:hover::before{
+    transform: translateY(-100%);
+    
+}
+.slide-up:hover{
+    color:black;
+}
+
+/* methode clip-path */
+.slide-up-bis{
+    padding:30px 50px;
+    font-size:50px;
+    border-radius:5px;
+    color: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #000;
+
+}
+
+.slide-up-bis::before{
+    content:'';
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    /* Permet de créer des masques de découpage sur un element, et ainsi définir quelle partie de l'element est visible  */
+
+    /* rectangle */
+    /* clip-path: inset(50% 50% 50% 50%); */
+
+    /* cercle */
+    /* clip-path: circle(0% at 50% 50%); */
+
+    /* polygone */
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+
+    transition: clip-path 0.5s ease;
+}
+.slide-up-bis:hover{
+    color:black;
+}
+.slide-up-bis:hover::before{
+    /* clip-path: inset(0 0 0 0); */
+
+    /* clip-path: circle(100% at 50% 50%); */
+
+    clip-path: polygon(50% -100%, 200% 50%, 50% 200%, -100% 50%);
+}
+
+
+
+/* Anime 2  */
+
+.focus{
+    padding:30px 50px;
+    font-size:50px;
+    border-radius:5px;
+    color: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+    border:none;
+    outline:none;
+    background-color: transparent;
+}
+
+.focus::before, 
+.focus::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition: transform 0.5s ease;
+}
+
+.focus::before{
+    border: 2px solid black;
+    margin:-2px;
+}
+
+.focus::after{
+  background-color: black;
+  z-index: -1;
+}
+
+.focus:hover::before{
+    transform:scale(1.05 , 1.1);
+    
+}
+.focus:hover::after{
+    transform:scale(0.95, 0.9);
+  
+}
+
+
+/*  Anime 3  */
+
+.underlined{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#000;
+    position: relative;
+}
+.underlined::after{
+    content:"";
+    display: block;
+    width:100%;
+    height:2px;
+    background-color: #000;
+    position: absolute;
+    bottom:0;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+
+    /* Changer l'origine d'apparition de la ligne  */
+    transform-origin: left;
+}
+
+.underlined:hover::after{
+    transform:scaleX(1);
+}
+
+/* Anime 4  */
+.border{
+    width:200px; 
+    height: 60px;
+    text-decoration: none;
+    /* background-color: red; */
+
+    /*  aligner un texte sur X et Y  */
+    text-align: center;
+    line-height:60px ;
+    color:#000;
+    font-size:50px;
+    font-weight: bold;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.border::before,
+.border::after{
+    content:'';
+    position: absolute;
+    border: 3px solid transparent ;
+    top:-2px;
+    left:-2px;
+
+}   
+.border:hover::before{
+    animation: borderSlideTop 1s linear forwards;
+}
+.border:hover::after{
+    animation: borderSlideBottom 1s linear forwards;
+}
+
+/* animation top  */
+@keyframes borderSlideTop{
+    0%{
+        width:0;
+        height:0;
+
+        border-top-color:#000;
+        border-right-color:transparent;
+    }
+    50%{
+        width:100%;
+        height:0;
+
+        border-top-color:#000;
+        border-right-color:transparent;
+
+        border-bottom-color:transparent;
+        border-left-color:transparent;
+      
+    }
+    100%{
+        width:100%;
+        height:100%;
+
+        border-top-color:#000;
+        border-right-color:#000;
+
+        border-bottom-color:transparent;
+        border-left-color:transparent;
+    }
+}
+
+/* animation bottom  */
+@keyframes borderSlideBottom{
+    0%{
+        width:0;
+        height:0;
+
+        border-bottom-color:transparent;
+        border-left-color:#000;
+    }
+    50%{
+        width:0%;
+        height:100%;
+
+        border-bottom-color:transparent;
+        border-left-color:#000;
+
+        border-top-color:transparent;
+        border-right-color:transparent;
+
+    }
+    100%{
+        width:100%;
+        height:100%;
+
+       border-bottom-color:#000;
+        border-left-color:#000;
+
+        border-top-color:transparent;
+        border-right-color:transparent;
+    }
+}
