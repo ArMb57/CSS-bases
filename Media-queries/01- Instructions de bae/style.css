@@ -1,0 +1,101 @@
+body{
+    background-color: #222;
+    color: #f1f1f1;
+}
+
+h1{
+    font-size: 35px;
+}
+
+
+/* max-width -> s'applique en dessous  de N px  */
+@media (max-width:1000px){
+    .txt-1{
+        color:blue
+    }
+
+}
+
+/* Les pouces -> in  */
+@media (max-width:10in){
+    .txt-1{
+        color:blue
+    }
+
+}
+
+
+/* min-width -> s'applique au dessus de N px  */
+@media (min-width:1000px){
+    .txt-2{
+        color:red
+    }
+
+}
+
+/* all, screen, print(impression 
+ */
+@media screen and (max-width: 1000px) {
+    .txt-1{
+        color:green
+    }
+
+}
+
+@media print  {
+    .txt-1{
+        background-color:green
+    }
+
+}
+
+
+/* and ,  */
+
+/* Créer un intervalle de style entre 500px et 1000px */
+@media (max-width: 1000px) and (min-width: 500px) {
+    .txt-1{
+        color:yellow
+    }
+
+}
+
+/* OU -> ,  */
+@media (min-width: 500px) , (max-width: 1000px) {
+    .txt-1{
+        background-color:royalblue;
+    }
+
+}
+
+/* Cibler les dispositifs avec un moyen de pointage moins précis (doigt) comme les telephone, tablette  */
+@media (pointer: coarse){
+    body{
+        background-color: lightgrey;
+    }
+}
+
+
+/* Cibler les dispositifs avec un moyen de pointage plus précis souris trackpad */
+@media (pointer: fine){
+    body{
+        background-color: lightcoral   ;
+    }
+}
+
+
+/* L'orientation  */
+
+/*  hauteur > largeur  */
+@media (orientation: portrait){
+    body{
+        background-color: pink;
+    }
+}
+
+/*  largeur > hauteur  */
+@media (orientation: landscape){
+    body{
+        background-color: lightgreen;
+    }
+}

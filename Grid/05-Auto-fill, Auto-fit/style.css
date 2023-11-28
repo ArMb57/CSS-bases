@@ -1,0 +1,24 @@
+body{
+    background-color: #222;
+}
+
+.grid{
+    display: grid;
+    background-color: blueviolet;
+
+    gap: 10px;
+    justify-content: center;
+     /* Créer autat de colonnes de 100px que possible  */
+    grid-template-columns: repeat(auto-fit, 100px);
+
+
+    /* Comble si il y a pas assez d'element par des colonnes implicites  */
+    /* grid-template-columns: repeat(auto-fill, 100px); */
+
+}
+.items{
+    background-color: blue;
+    border: 1px solid black;
+    font-size: 50px;
+    color:white;
+}

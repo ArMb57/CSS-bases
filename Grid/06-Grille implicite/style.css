@@ -1,0 +1,27 @@
+body{
+    background-color: #222;
+}
+
+.grid{
+    display: grid;
+    background-color: blueviolet;
+    grid-template-rows: 200px 200px ;
+    grid-template-columns: 200px 200px 200px;
+
+    gap: 10px;
+
+    /* Gérer la hauteur des elements implicites */
+    grid-auto-rows: 300px;
+
+    /* Faire passer les elements sur de nouvelles colonnes et on pas lignes */
+    grid-auto-flow:column;
+    grid-auto-columns: 200px;
+
+
+}
+.items{
+    background-color: blue;
+    border: 1px solid black;
+    font-size: 50px;
+    color:white;
+}

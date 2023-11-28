@@ -1,0 +1,22 @@
+body{
+    background-color: #222;
+}
+
+.grid{
+    display: grid;
+    background-color: blueviolet;
+
+    /* Max-content -> Contenu sur une meme ligne  */
+    /* Min-content -> largeur du plus grd contenu  */
+    /* grid-template-columns: max-content 200px min-content; */
+
+
+/*  Va au minimum prendre 600px de largeur et 1fr valeur préférée  */
+    grid-template-columns: 1fr minmax(600px, 1fr);
+}
+.items{
+    background-color: blue;
+    border: 1px solid black;
+    font-size: 50px;
+    color:white;
+}

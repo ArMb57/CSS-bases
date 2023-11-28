@@ -1,0 +1,59 @@
+h1{
+/* font-size: calc(2vw + 25px); */
+
+/* clamp - valeurMini, Valeur préférée, valeurMax  */
+/* font-size: clamp(20px, 5vw, 55px); */
+
+
+
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px auto;
+}
+
+/* Mobil first */
+/* h1{
+    font-size: 45px;
+}
+
+@media screen and (min-width: 728px) {
+    h1{
+        font-size: 55px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    h1{
+        font-size: 75px;
+        margin-bottom: 200px;
+    }
+} */
+
+
+
+/* desktopFirst */
+
+h1{
+    font-size: 75px;
+}
+
+@media screen and (max-width: 1024px) {
+    h1{
+        font-size: 55px;
+    }
+
+    
+}
+
+@media screen and (max-width: 728px) {
+    h1{
+        font-size: 45px;
+    }
+}
+

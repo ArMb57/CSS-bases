@@ -1,0 +1,62 @@
+body{
+    background-color: #222;
+}
+
+.grid{
+    display: grid;
+    /*  1er manière de déclarer une grid */
+    grid-template-columns: 200px 200px 200px ;
+    grid-template-rows: 200px 200px;
+    background-color: blueviolet;
+
+
+    /* Centrer la grille par rapport au container  */
+
+    /* Centrer sur X */
+    justify-content: center;
+
+    /* Centrer sur Y */
+    align-content: center;
+    height:100vh;
+
+    /* centrer les items par rapport à la grille  */
+    /* X */
+    /* justify-items: end; */
+    /* Y */
+    /* align-items: end; */
+
+
+}
+
+.items{
+    background-color: blue;
+    border: 1px solid black;
+    font-size: 50px;
+    color:white;
+
+    
+    /* centrer les items par rapport à la grille  */
+    /* X */
+/* justify-self: center; */
+    /* Y */
+/* align-self: center; */
+
+/* Ajouter un env flexible à l'intérieur d'une grid  */
+/* display:flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+flex-wrap: wrap;
+gap :10px; */
+    
+}
+
+.child{
+    background-color: rgb(255, 0, 17);
+    border: 1px solid black;
+    width:50px;
+    height:50px;
+
+    font-size: 50px;
+    color:white;
+}

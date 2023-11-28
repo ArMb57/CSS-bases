@@ -1,0 +1,41 @@
+body{
+    background-color: #222;
+}
+
+.grid{
+    display: grid;
+    /*  1er manière de déclarer une grid */
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+
+    /*  2em manière de déclarer une grid */
+    /* fr -> fractional unit  */
+    /*  permemttre de mprendre la place restante  */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    height:600px;
+
+
+    /*  3em manière de déclarer une grid */
+    /* repeat() -> permet de répéter un nombre de fois une valeur */
+
+    /* grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, 200px) ; */
+    gap: 10px;
+
+
+    /*  prop raccoucie */
+    /*  rows / column  */
+    grid-template: 200px 200px/1fr 1fr ;
+
+    
+
+
+}
+.items{
+    background-color: blue;
+    border: 1px solid black;
+    font-size: 50px;
+    color:white;
+    
+}
