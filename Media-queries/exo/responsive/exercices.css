@@ -1,0 +1,47 @@
+/* Exercice 1 */
+/* Comment limiter la largeur de .cart à 1100px maximum et 300px minimum sans media queries ? */
+
+.card{
+       background-color: royalblue;
+       max-width:1100px;
+       min-width:300px;
+       margin: 100px auto;
+}
+
+
+
+/* Exercice 2*/
+
+/* A. Utilisez une requête média(media queries) afin de donner une width de 600px à cet input seulement lorsque la largeur d'écran est supérieure à 800px et inférieure à 1300px.*/
+
+.txt-input{
+       display: block;
+       margin: 20px auto;
+}
+@media screen and (min-width: 800px) and (max-width: 1300px){
+       .txt-input{
+              width: 600px;
+       }
+}
+
+
+
+
+
+
+/* B.  1.Donnez une couleur de fond "crimson" à l'input seulement quand l'orientation du viewport est en mode "portrait." 
+       2.Faite appaitre la .box en dessous de 500px.*/
+
+@media screen and (orientation: portrait){
+       .txt-input{
+              background-color: crimson;
+       }
+}
+
+@media screen and (max-width: 500px){
+       .box{
+              width:300px;
+              height:300px;
+              background-color: crimson;
+       }
+}
